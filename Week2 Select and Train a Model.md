@@ -5,7 +5,7 @@
 -  Data-centric AI development is useful in practical case. It is more than collecting more data. Use tools to improve the data in the most efficient possible way.
 #### Key challenges
 - AI system  = Code (algorithm/model) + Data
-![[Pasted image 20220703153312.png]]
+![model centric](images\model_centric.png)
 - challenges in model development
 	1. Doing well on training set (usually measured by average training error)
 	2. Doing well on dev/test sets
@@ -19,7 +19,7 @@
 	- skewed data distribution
 	- accuracy in rare classes
 #### Establish a baseline
-![[Pasted image 20220703154803.png]]
+![establish baseline](images\establish_baseline.png)
 - Ways to establish a baseline
 	- Human level performance (HLP)
 	- Literature search for state-of-the-art/open
@@ -46,7 +46,7 @@
 	- What fraction of all the data has that tag?
 	- How much room for improvement is there on data with that tag?
 #### Prioritizing what to work on
-![[Pasted image 20220703161704.png]]
+![prioritizing](images\prioritizing.png)
 - decide on most important categories to work on based on:
 	- How much room for improvement there is
 	- How frequently that category appears
@@ -60,12 +60,12 @@
 #### Skewed datasets
 When it comes to detecting rare cases, the accuracy will be really high even if the algorithm failed to detect a lot of these cases. That is the reason why we use F1 score.
 - Confusion matrix: Precision and Recall
-![[Pasted image 20220703192301.png]]
+![confusion matrix](images\confusion_matrix.png)
 - Combining precision and recall - F1 score (harmonious mean of precision and recall)
-![[Pasted image 20220703192636.png]]
+![f1 score](images\f1_score.png)
 - Multi-class metrics
 manufacturing cares more about the recall since they don't want defected products go into market
-![[Pasted image 20220703192933.png]]
+![multiclass metrics](images\multiclass_metrics.png)
 
 #### Performance auditing
 - Auditing framework
@@ -81,7 +81,7 @@ manufacturing cares more about the recall since they don't want defected product
 - model-centric view: take the data you have and develop a model that does as well as possible on it. In other words, we hold the data fixed and iteratively improve the code/model.
 - data-centric view: The qualify of the data is paramount. Use tools to improve the data quality; this will allow multiple models to do well. We hold the code fixed and iteratively improve the data.
 #### A useful picture of data augmentation
-![[Pasted image 20220703194858.png]]
+![data augmentation](images\data_augmentation.png)
 - classify the noise
 - benchmark model performance against HLP
 - use error analysis to determine which segment to augment data. It turns out that if performance on cafe noise goes up, probably performance on the nearby points will go up too and performance on far-away points may or may not go up as much. 
@@ -92,7 +92,7 @@ manufacturing cares more about the recall since they don't want defected product
 	- Does it sound realistic? (i)
 	- Is the x $\rightarrow$ y mapping clear? (e.g., can humans recognize speech?)(ii)
 	- Is the algorithm currently doing poorly on it?
-![[Pasted image 20220703200013.png]]
+![data-centric](images\data_centric.png)
 
 #### Can adding data hurt?
 - Where does this question come from: augmenting data can change the distribution of the data.
@@ -101,7 +101,7 @@ manufacturing cares more about the recall since they don't want defected product
 	- The mapping x $\rightarrow$ y is clear (e.g., given only the input x, humans can make accurate predictions) (1 vs. I)
 	Then, adding data rarely hurts accuracy.
 #### Adding features
-![[Pasted image 20220703200857.png]]
+![restaurant recommendation](images\restaurant_recom.png)
 - Product recommendation is shifting from collaborative filtering to content based filtering
 	- collaborative filtering: looks at the user and try to figure out who is similar to that user and then recommend things to you that people like you also like.
 	- content based filtering: look at you as a person and look at the description of the restaurant or look at the menu of the restaurants and look at other information about the restaurant, to see if that restaurant is a good match for you or not. The advantage of content based filtering is that even if there's a new restaurant or a new product that hardly anyone else has liked, by looking at the description of the restaurant, rather than just looking at who else like the restaurants, you can more quickly make good recommendations (cold-start problem). 

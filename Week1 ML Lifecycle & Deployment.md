@@ -1,12 +1,11 @@
 # Overview of the ML Lifecycle and Deployment
 
+![MLOps](images/MLOps.png)
 
-![[Pasted image 20220703113456.png]]
+![ML infrastucture](images/ML_infra.png)
 
 ## Week 1: The Machine Learning Project Lifecycle
-![[Pasted image 20220703114641.png]]
-
-![[Pasted image 20220703115045.png]]
+![ML lifecycle](images/ML_lifecycle.png)
 
 ## Deployment
 - Two Key Challenges
