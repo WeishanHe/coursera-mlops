@@ -1,7 +1,8 @@
 # Overview of the ML Lifecycle and Deployment
 
 
-![[Pasted image 20220703113456.png]]
+<!-- ![[Pasted image 20220703113456.png]] -->
+![test](Pasted image 20220703113456.png)
 
 ## Week 1: The Machine Learning Project Lifecycle
 ![[Pasted image 20220703114641.png]]
